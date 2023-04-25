@@ -10,25 +10,21 @@ parcelas.
 
 int main() {
     float NEPERIANO = 0;
-    float FATORIAL = 0;
+    float FATORIAL = 1;
     int contador = 0;
 
     while(contador <= 15){
         float BASE_FATORIAL = contador;
-        printf("\n%.2f\n", BASE_FATORIAL);
+        float FATORIAL = 1;
         while(BASE_FATORIAL > 1){
-            printf("%.2f\n", BASE_FATORIAL);
             FATORIAL = (FATORIAL * BASE_FATORIAL);
             BASE_FATORIAL = BASE_FATORIAL - 1;
         }
-        //printf("%.2f\n", NEPERIANO);
-        //printf("%.2f\n", FATORIAL);
         NEPERIANO = (NEPERIANO + (1/FATORIAL));
-        //printf("%.2f\n", NEPERIANO);
         contador++;
     }
 
-    //printf("%.2f", NEPERIANO);
+    printf("%.2f\n", NEPERIANO);
 
     system("pause");
     return 0;
